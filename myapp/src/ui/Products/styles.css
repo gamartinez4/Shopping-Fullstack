@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-options {
+  display: flex;
+  gap: 10px; 
+}
+
+.header-options button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-options button:hover {
+  background-color: #0056b3;
+}
+
+.catalog-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.product-card {
+  display: flex;
+  background-color: #e5fbff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  font-family: 'Arial', sans-serif; 
+}
+
+.product-image {
+  width: 150px; 
+  background: #f4f4f4; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-content {
+  display: flex;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.product-info {
+  flex-grow: 2;
+}
+
+.product-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.product-info p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.product-order {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #007BFF; 
+}
+
+.product-quantity button {
+  margin: 0 5px;
+  font-size: 1em;
+}
+
+.product-quantity input {
+  text-align: center;
+}
+
+.product-order button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.product-order button:hover {
+  background-color: #0056b3; 
+}
+
+.product-order button:disabled {
+  background-color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
