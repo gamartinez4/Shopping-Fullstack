@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\infrastructure\\api\\types\\queryql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\infrastructure\\api\\types\\queryql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\infrastructure\\api\\types\\mutationql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\infrastructure\\api\\types\\mutationql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\entities\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\repository\\ordersrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\ordersrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\infrastructure\\api\\types\\logintype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\infrastructure\\api\\types\\logintype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\infrastructure\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\infrastructure\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\infrastructure\\api\\customrequestinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\infrastructure\\api\\customrequestinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\repository\\productsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\productsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\utils\\tokenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\utils\\tokenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|c:\\users\\gamar\\onedrive\\escritorio\\shopping-fullstack-main\\netcore_backened\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E99E1BA-81AC-4669-AE33-E8D4722DA589}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-14T05:01:58.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QueryQl.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\QueryQl.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Infrastructure\\api\\Types\\QueryQl.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\QueryQl.cs",
+              "RelativeToolTip": "WebApplication1\\Infrastructure\\api\\Types\\QueryQl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T16:04:27.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\db\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Infrastructure\\db\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\db\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WebApplication1\\Infrastructure\\db\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T18:23:51.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomRequestInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\CustomRequestInterceptor.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Infrastructure\\api\\CustomRequestInterceptor.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\CustomRequestInterceptor.cs",
+              "RelativeToolTip": "WebApplication1\\Infrastructure\\api\\CustomRequestInterceptor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T18:23:42.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\Orders.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entities\\Orders.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\Orders.cs",
+              "RelativeToolTip": "WebApplication1\\Entities\\Orders.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T21:25:36.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginType.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\LoginType.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Infrastructure\\api\\Types\\LoginType.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\LoginType.cs",
+              "RelativeToolTip": "WebApplication1\\Infrastructure\\api\\Types\\LoginType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T19:41:44.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\User.cs",
+              "RelativeToolTip": "WebApplication1\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T02:16:46.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\ProductsRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\ProductsRepository.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\ProductsRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\ProductsRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T02:16:39.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersRepository .cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\OrdersRepository .cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\OrdersRepository .cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\OrdersRepository .cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\OrdersRepository .cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T18:23:53.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\Products.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Entities\\Products.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Entities\\Products.cs",
+              "RelativeToolTip": "WebApplication1\\Entities\\Products.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T01:36:42.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TokenValidator.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Utils\\TokenValidator.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Utils\\TokenValidator.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Utils\\TokenValidator.cs",
+              "RelativeToolTip": "WebApplication1\\Utils\\TokenValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T00:36:33.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MutationQl.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\MutationQl.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Infrastructure\\api\\Types\\MutationQl.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Infrastructure\\api\\Types\\MutationQl.cs",
+              "RelativeToolTip": "WebApplication1\\Infrastructure\\api\\Types\\MutationQl.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T00:36:28.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T01:43:41.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\gamar\\OneDrive\\Escritorio\\Shopping-Fullstack-main\\netcore_backened\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwBIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:04:55.517Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
