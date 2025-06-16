@@ -1,18 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useLazyQuery, gql } from '@apollo/client';
+import { useLazyQuery } from '@apollo/client';
+import LOGIN_QUERY from '../graphql/queries/login.query';
 import { useNavigate } from "react-router-dom";
-import { useLocalStorage } from '../hooks/UseLocalStorage';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../features/user/userSlice';
-
-const LOGIN_QUERY = gql`
-  query Login($username: String!, $password: String!) {
-    login(username: $username, password: $password) {
-      token
-      idUser
-    }
-  }
-`;
 
 const useLoginViewModel = () => {
     const [username, setUsername] = useState('');

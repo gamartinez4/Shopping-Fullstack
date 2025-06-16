@@ -1,21 +1,7 @@
-import { useQuery, gql, useMutation} from '@apollo/client';
-import { useEffect } from "react";
-import { useLocalStorage } from '../hooks/UseLocalStorage';
+import { useQuery } from '@apollo/client';
+import { useLocalStorage } from '../hooks/useLocalStorage';
+import PRODUCTS_LIST_QUERY from '../graphql/queries/productsList.query';
 import { useNavigate } from 'react-router-dom';
-
-const PRODUCTS_LIST_QUERY = gql`
-  query PRODUCTS_LIST{
-    allListOfProducts{
-        id
-        name
-        stock
-        price
-        idCategories
-      }
-  }
-`;
-
-
 
 const useProductsViewModel = () => {
   const { loading, error, data } = useQuery(PRODUCTS_LIST_QUERY);

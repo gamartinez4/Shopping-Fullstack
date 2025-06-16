@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./styles.css"
 import imagen from "../../assets/item_image.png"
-import { useLocalStorage } from '../../hooks/UseLocalStorage';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useNavigate } from "react-router-dom";
 import { FiLogOut } from 'react-icons/fi';  
 import { gql, useMutation } from '@apollo/client';
