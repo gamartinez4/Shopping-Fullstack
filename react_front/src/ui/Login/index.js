@@ -1,5 +1,5 @@
 import React from 'react';
-import useLoginViewModel from '../../viewModel/UseLoginViewModel'
+import useLoginViewModel from '../../viewModel/useLoginViewModel'
 import LoginPage from './LoginPage';
 
 const LoginContainer = () => {

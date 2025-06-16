@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './style.css'; // Asegúrate de que la ruta es correcta
+import './styles.css'; // Asegúrate de que la ruta es correcta
 
 const LoginPage = ({ username, password, onUsernameChange, onPasswordChange, onLogin}) => {
 
