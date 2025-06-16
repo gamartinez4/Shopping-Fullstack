@@ -5,6 +5,9 @@ import { useLocalStorage } from '../../hooks/UseLocalStorage';
 import { useNavigate } from "react-router-dom";
 import { FiLogOut } from 'react-icons/fi';  
 import { gql, useMutation } from '@apollo/client';
+import { useDispatch } from 'react-redux';
+import { addToCart as addToCartAction, clearCart } from '../../features/cart/cartSlice';
+import { clearUser } from '../../features/user/userSlice';
 
 
 
@@ -70,6 +73,7 @@ import { gql, useMutation } from '@apollo/client';
     const [index, setIndex] = useState(0);
     const [cart, setCart] = useState([])
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
     console.log('token Produces:')
@@ -89,6 +93,7 @@ import { gql, useMutation } from '@apollo/client';
       } else {
         setCart([...cart, { ...productToAdd, quantity }]);
       }
+      dispatch(addToCartAction({ product: productToAdd, quantity }));
     };
 
     const buyItems = () =>{
@@ -105,6 +110,8 @@ import { gql, useMutation } from '@apollo/client';
     };
 
     const closeSession = () => {
+      dispatch(clearUser());
+      dispatch(clearCart());
       setUserInfoStorage(null)
       navigate(-1)
     }

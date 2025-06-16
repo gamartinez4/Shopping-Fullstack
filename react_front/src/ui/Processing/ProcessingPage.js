@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { FiLogOut } from 'react-icons/fi';  
 import { useLocalStorage } from '../../hooks/UseLocalStorage';
 import imagen from "../../assets/item_image.png"
+import { useDispatch } from 'react-redux';
+import { clearCart } from '../../features/cart/cartSlice';
+import { clearUser } from '../../features/user/userSlice';
 
 const UPDATE_STOCK = gql`
   mutation DiscountStockByOrder($orders: [OrdersInput!]!) {
@@ -28,11 +31,13 @@ const ADD_ORDER = gql`
     const [addOrder, { dataMut2, loadingMut2, errorJMut2 }] = useMutation(ADD_ORDER);
    const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
    const navigate = useNavigate();
-    
+   const dispatch = useDispatch();
+
     const executeMutations = async () =>{
       const listConverted = list.map(e => ({idUser : userInfoStorage.id, idProducts: e.id, quantity: e.quantity}))
       await addOrder({variables: {orders: listConverted}})
       await updateStock({variables: {orders: listConverted}})
+      dispatch(clearCart());
       navigate('/final')
     }
 
@@ -74,11 +79,14 @@ const ADD_ORDER = gql`
     const location = useLocation();
     const navigate = useNavigate();
     const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
+    const dispatch = useDispatch();
 
     const selectedItemsList = location.state.mylist;
     console.log(selectedItemsList)
 
     const closeSession = () => {
+      dispatch(clearUser());
+      dispatch(clearCart());
       navigate('/')
       setUserInfoStorage(null)
     }

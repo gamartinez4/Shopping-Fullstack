@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useLazyQuery, gql } from '@apollo/client';
 import { useNavigate } from "react-router-dom";
 import { useLocalStorage } from '../hooks/UseLocalStorage';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../features/user/userSlice';
 
 const LOGIN_QUERY = gql`
   query Login($username: String!, $password: String!) {
@@ -19,25 +21,23 @@ const useLoginViewModel = () => {
     
     const navigate = useNavigate();
     const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
-
+    const dispatch = useDispatch();
 
     useEffect(() => {
       console.log(data);  
       var token = ''
       if (data && data.login && data.login.token && data.login.idUser){
         token = data.login.token;
-        setUserInfoStorage({token: token, name:username, id: data.login.idUser})
+        setUserInfoStorage({token: token, name:username, id: data.login.idUser});
+        dispatch(setUser({token: token, name: username, id: data.login.idUser}));
       }
       if (token) 
         navigate("/products"); 
     }, [data]); 
 
-
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
     };
-
-
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
