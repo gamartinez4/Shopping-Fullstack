@@ -1,130 +1,134 @@
+import React from 'react';
 import { useMutation } from '@apollo/client';
-import { useLocation } from 'react-router-dom';
-import './styles.css';
-import { useNavigate } from "react-router-dom";
-import { FiLogOut } from 'react-icons/fi';  
+import { useLocation, useNavigate } from 'react-router-dom';
+import { FiLogOut } from 'react-icons/fi';
 import { useLocalStorage } from "../../hooks/UseLocalStorage";
-import imagen from "../../assets/item_image.png"
+import imagen from "../../assets/item_image.png";
 import { useDispatch } from 'react-redux';
 import { clearCart } from '../../features/cart/cartSlice';
 import { clearUser } from '../../features/user/userSlice';
 import ADD_ORDER from '../../graphql/mutations/addOrder.mutation';
 import DISCOUNT_STOCK_BY_ORDER from '../../graphql/mutations/discountStockByOrder.mutation';
+import {
+    Box, Button, Card, CardContent, Typography, Grid, AppBar, Toolbar,
+    Container, Paper, List, ListItem, ListItemText, ListItemAvatar, Avatar, Divider, IconButton
+} from '@mui/material';
 
 const OrderSummary = ({ list }) => {
-  const [updateStock, { dataMut, loadingMut, errorJMut }] = useMutation(DISCOUNT_STOCK_BY_ORDER);
-  const [addOrder, { dataMut2, loadingMut2, errorJMut2 }] = useMutation(ADD_ORDER);
- const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
- const navigate = useNavigate();
- const dispatch = useDispatch();
+    const [updateStock] = useMutation(DISCOUNT_STOCK_BY_ORDER);
+    const [addOrder] = useMutation(ADD_ORDER);
+    const [userInfoStorage] = useLocalStorage('user_info', null);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
-  const executeMutations = async () =>{
-    const listConverted = list.map(e => ({idUser : userInfoStorage.id, idProducts: e.id, quantity: e.quantity}))
-    await addOrder({variables: {orders: listConverted}})
-    await updateStock({variables: {orders: listConverted}})
-    dispatch(clearCart());
-    navigate('/final')
-  }
+    const executeMutations = async () => {
+        const listConverted = list.map(e => ({ idUser: userInfoStorage.id, idProducts: e.id, quantity: e.quantity }));
+        await addOrder({ variables: { orders: listConverted } });
+        await updateStock({ variables: { orders: listConverted } });
+        dispatch(clearCart());
+        navigate('/final');
+    };
 
-  return (
-    <div className='miDivEspecial'>
-      <div style={{marginLeft : 30}}>
-        <div className='title'>Shopping card details</div>
-        <div><b>Items: </b>{list.reduce((acc, item) => acc + item['quantity'], 0)} units</div>
-        <div><b>Total: </b> {`€ ${list.reduce((acc, item) => acc + item['quantity']*item['price'], 0).toFixed(2)}`}</div>
-        <button onClick={executeMutations}>Process Order</button>
-      </div>
-    </div>
-  );
+    const totalItems = list.reduce((acc, item) => acc + item.quantity, 0);
+    const totalPrice = list.reduce((acc, item) => acc + item.quantity * item.price, 0);
+
+    return (
+        <Paper elevation={3} sx={{ padding: 2, marginTop: 4 }}>
+            <Typography variant="h6" gutterBottom>Shopping Cart Details</Typography>
+            <Typography variant="body1"><b>Items: </b>{totalItems} units</Typography>
+            <Typography variant="h5" sx={{ my: 2 }}><b>Total: </b>{`€ ${totalPrice.toFixed(2)}`}</Typography>
+            <Button variant="contained" color="primary" onClick={executeMutations} fullWidth>
+                Process Order
+            </Button>
+        </Paper>
+    );
 };
 
-const ProductItemProcessing = ({ product}) => {
-  
-  
-  return (
-    <div className='row'>
-      <div >
-        <img src={imagen} alt={product.name} height={80}/>
-      </div>
-      <div >
-        <div className="product-info">
-          <h3>{product.name}</h3>
-          <p>Item No. {product.id}</p>
-          <b><p>{product.stock} in stock</p></b>
-        </div>
-      </div>
-    </div>
-  );
-};
+const ProductItemProcessing = ({ product }) => (
+    <ListItem>
+        <ListItemAvatar>
+            <Avatar src={imagen} alt={product.name} variant="square" sx={{ width: 80, height: 80, mr: 2 }} />
+        </ListItemAvatar>
+        <ListItemText
+            primary={product.name}
+            secondary={`Item No. ${product.id}`}
+        />
+    </ListItem>
+);
+
 
 const ProcessingPage = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
-  const dispatch = useDispatch();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [userInfoStorage, setUserInfoStorage] = useLocalStorage('user_info', null);
+    const dispatch = useDispatch();
 
-  const selectedItemsList = location.state.mylist;
-  console.log(selectedItemsList)
+    const selectedItemsList = location.state.mylist || [];
 
-  const closeSession = () => {
-    dispatch(clearUser());
-    dispatch(clearCart());
-    navigate('/')
-    setUserInfoStorage(null)
-  }
+    const closeSession = () => {
+        dispatch(clearUser());
+        dispatch(clearCart());
+        setUserInfoStorage(null);
+        navigate('/');
+    };
 
-  return (
-    userInfoStorage?
-    <div>
-    <div className="header">
-        <p className="catalog-title">Hi {userInfoStorage.name} </p>
-        <div className="header-options">
-         <button onClick={closeSession}>
-          <FiLogOut size={24} /> 
-         </button>
-        </div>
-      </div>
-    <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-      <div style={{ width: '75%' }} >
-        <div className='title'  My Shopping cart> My Shopping car </div>
-        <div className='row'>
-          <div className="products">
-            <b>Products</b>
-            {selectedItemsList.map((product) => (
-            <div className='fixed-size-div' key={product.id}>
-              <ProductItemProcessing
-                product={product}
-                  />
-                </div>
-              ))}
+    if (!userInfoStorage) {
+        return (
+            <Container>
+                <Typography variant="h6" sx={{ mt: 4 }}>
+                    You are not authorized. Please log in.
+                </Typography>
+            </Container>
+        );
+    }
 
-          </div>
-          <div className="price">
-            <b>Price</b>
-            {selectedItemsList .map((product) => (
-            <div className='fixed-size-div' key={product.id}>€{product.price}</div>
-          ))}
-        
-          </div>
-          <div className="quantity">
-            <b>Quantity</b>
-            {selectedItemsList.map((product) => (
-            <div className='fixed-size-div' key={product.id}>{product.quantity}</div>
-          ))}
-          </div>
-          <div className="total">
-            <b>Total</b>
-            {selectedItemsList.map((product) => (
-            <div  className='fixed-size-div'  key={product.id}>€{(product.price * product.quantity).toFixed(2)}</div>
-          ))}
-          </div>
-        </div>
-      </div>
-      
-      <OrderSummary list={selectedItemsList} />
-    </div>
-    </div>:<p>className="No tiene Token de autorizacion"</p>
-  );
+    return (
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        Hi {userInfoStorage.name}
+                    </Typography>
+                    <IconButton color="inherit" onClick={closeSession}>
+                        <FiLogOut size={24} />
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+            <Container sx={{ mt: 4 }}>
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={8}>
+                        <Typography variant="h4" gutterBottom>My Shopping Cart</Typography>
+                        <Paper elevation={2}>
+                            <List>
+                                <ListItem sx={{ backgroundColor: 'grey.200' }}>
+                                    <ListItemText primary="Product" sx={{ flexBasis: '50%' }} />
+                                    <ListItemText primary="Price" sx={{ flexBasis: '20%', textAlign: 'center' }} />
+                                    <ListItemText primary="Quantity" sx={{ flexBasis: '15%', textAlign: 'center' }} />
+                                    <ListItemText primary="Total" sx={{ flexBasis: '15%', textAlign: 'right' }} />
+                                </ListItem>
+                                {selectedItemsList.map((product) => (
+                                    <React.Fragment key={product.id}>
+                                        <ListItem>
+                                            <Box sx={{ flexBasis: '50%' }}>
+                                                <ProductItemProcessing product={product} />
+                                            </Box>
+                                            <Typography sx={{ flexBasis: '20%', textAlign: 'center' }}>€{product.price.toFixed(2)}</Typography>
+                                            <Typography sx={{ flexBasis: '15%', textAlign: 'center' }}>{product.quantity}</Typography>
+                                            <Typography sx={{ flexBasis: '15%', textAlign: 'right' }}>€{(product.price * product.quantity).toFixed(2)}</Typography>
+                                        </ListItem>
+                                        <Divider />
+                                    </React.Fragment>
+                                ))}
+                            </List>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <OrderSummary list={selectedItemsList} />
+                    </Grid>
+                </Grid>
+            </Container>
+        </Box>
+    );
 };
 
 export default ProcessingPage;

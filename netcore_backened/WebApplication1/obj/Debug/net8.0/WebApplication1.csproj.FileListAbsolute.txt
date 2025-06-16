@@ -280,6 +280,7 @@ C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\We
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\gamar\OneDrive\Escritorio\Shopping-Fullstack-master\netcore_backened\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props

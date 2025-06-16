@@ -1,5 +1,5 @@
 import React from 'react';
-import useProductsViewModel from '../../viewModel/useProductsViewModel'
+import useProductsViewModel from "../../viewModel/UseProductsViewModel";
 import ProductsPage from './ProductsPage';
 
 const ProductsContainer = () => {
